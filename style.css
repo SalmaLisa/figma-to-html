@@ -1,0 +1,352 @@
+@import url("https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book");
+
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  font-family: "ITC Avant Garde Gothic Std Book", sans-serif;
+  border: 1px solid;
+}
+/* ================================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 24px;
+  border: 1px solid;
+}
+.contact {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 7px;
+  border-bottom: 1px solid;
+}
+
+/* ==================================== */
+.banner {
+  background-image: url("/assets/banner.png");
+  height: 866px;
+  width: 1765px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  position: relative;
+}
+.banner::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #05283e -23.09%,
+    rgba(9, 67, 103, 0) 107.85%
+  );
+}
+.banner-info-container {
+  position: absolute;
+  top: 107px;
+  left: 111px;
+}
+.banner-title {
+  font-size: 100px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+.red-box-container {
+  position: relative;
+}
+.red-box {
+  background-color: #ec2232;
+  opacity: 50%;
+  height: 295px;
+  width: 294px;
+  margin-top: 97px;
+}
+.red-box-text-container {
+  position: absolute;
+  top: 92px;
+  left: 97px;
+}
+.red-box-text-container h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  font-size: 35px;
+  font-weight: 700;
+}
+#line-container {
+  display: flex;
+}
+#line {
+  width: 57px;
+  height: 1px;
+  background: #fff;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.banner-text {
+  font-weight: 500;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  position: absolute;
+  top: 612px;
+}
+.banner-text #text1,
+#text3 {
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.2) 55.12%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-text #text2 {
+  margin-left: 37px;
+  margin-right: 51px;
+}
+
+/* =============================== */
+.industry-experts-section {
+  margin: 160px auto 0;
+  width: 68%;
+}
+
+.industry-experts-section .container {
+  display: flex;
+}
+.industry-experts-section .container .left {
+  width: 50%;
+}
+.industry-experts-section .container .right {
+  width: 31%;
+  font-size: 18px;
+  margin-left: 41px;
+  margin-top: 150px;
+  line-height: 29px;
+}
+.small-text {
+  color: #ec2232;
+  margin-bottom: 23px;
+}
+.industry-experts-section h1,
+.first-choice-section h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+.stats {
+  text-align: center;
+  display: flex;
+  margin-top: 131px;
+  margin-bottom: 216px;
+}
+.stats div {
+  padding: 0 73px;
+}
+#stat2 {
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+.stats h1 {
+  font-size: 110px;
+  font-weight: 600;
+}
+.plus {
+  font-weight: 300;
+  color: #ec2232;
+}
+.stats p {
+  font-size: 30px;
+}
+.bold {
+  font-weight: 600;
+}
+/* ============================ */
+.first-choice-section {
+  background-color: #f9f9f9;
+  position: relative;
+}
+.right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.first-choice-section .container {
+  width: 68%;
+  position: absolute;
+  top: 150px;
+  left: 402px;
+}
+.card-container {
+  display: flex;
+  margin-left: -30px;
+}
+.card {
+  background-color: #fff;
+  margin: 138px 22px;
+  box-shadow: 0px 4px 40px #ccc;
+}
+.card p {
+  font-size: 30px;
+  line-height: 43px;
+  font-weight: 550;
+  margin-top: 43px;
+  margin-left: 60px;
+  margin-bottom: 46px;
+}
+/* ================================ */
+.service-section{
+  margin-top: 530px;
+  border: 1px solid;
+ 
+}
+.service-section-header{
+  position: relative;
+  margin-left: 293px;
+  display: flex;
+  justify-content: space-between;
+}
+#text-img{
+  margin-top: -50px;
+  background-color: white;
+ 
+}
+
+#title{
+  background-color: white;
+  margin-top: -40px;
+}
+.subtitle-container{
+  margin-left: 297px;
+}
+.subtitle{
+  color: #9198A0;
+  font-size: 25px;
+  margin-left: 50px;
+  
+}
+.service-card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 180px;
+  column-gap: 84px;
+  width: 65%;
+  margin: auto;
+  border-left: 2px solid #EC2232;
+  padding-left: 56px;
+  margin-top: 110px;
+  margin-bottom: 216px;
+}
+.service-card{
+  display: flex;
+}
+.service-card .order{
+  font-size: 25px;
+  color: #F0E3D8;
+  font-weight: 600;
+  margin-right: 25px;
+}
+.service-card .img{
+ margin-top: 20px;
+}
+.service-info{
+  margin-left: 35px;
+}
+.service-info h2{
+  font-size: 30px;
+  font-weight: 600;
+  color:#222222;
+}
+.service-info p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29px;
+  margin-top: 14px;
+}
+/* ==================================== */
+.machine-section{
+  background: url('./assets/machine-section/banner.png');
+  width: 1920px;
+  height: 1050px;
+}
+.machine-info-container{
+  margin-left: 388px;
+  padding-top: 240px;
+}
+.machine-small-text{
+  color: #fff;
+  margin-bottom: 33px;
+}
+.machine-title{
+  color: #fff;
+  font-size: 70px;
+  line-height: 85px;
+  font-weight: 500;
+  margin-bottom: 19px;
+}
+.machine-text{
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+  font-weight: 300;
+}
+.machine-card-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+width: 40%;
+margin-left: 390px;
+margin-top: 87px;
+}
+.machine-card span{
+  font-weight: 550;
+}
+.card-title{
+  font-size: 43px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 14px;
+  margin-top: 25px;
+}
+.card-text{
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+/* ====================================== */
+.industries-section{
+  padding: 205px;
+}
+.industries-section p{
+  color: #E82232;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 88px;
+}
+.industries-logo{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+row-gap: 94px;
+justify-content: center;
+justify-items: center;
+}
+#fujitsu{
+  margin-top: -20px;
+}
+/* ==================================== */
+.form-container{
+  padding:178px 203px ;
+}
+.input-div{
+  display: flex;
+  border: 1px solid #ccc;
+  p
+}
