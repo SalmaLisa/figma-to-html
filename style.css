@@ -11,14 +11,13 @@
   max-width: 1920px;
   margin: auto;
   font-family: "ITC Avant Garde Gothic Std Book", sans-serif;
- 
 }
 /* ================================== */
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 24px;
- 
 }
 .contact {
   font-size: 18px;
@@ -299,6 +298,7 @@ nav {
   margin-bottom: 33px;
 }
 .machine-title {
+  width:50%;
   color: #fff;
   font-size: 70px;
   line-height: 85px;
@@ -306,6 +306,7 @@ nav {
   margin-bottom: 19px;
 }
 .machine-text {
+  width: 60%;
   font-size: 18px;
   line-height: 29px;
   color: #fff;
@@ -458,56 +459,373 @@ nav {
 .img-container img {
   width: 100%;
   height: 100%;
-
 }
 /* ===================================== */
-footer{
+footer {
   padding: 110px;
-  background-color:#181818;
+  background-color: #181818;
   color: #fff;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.first-sec a{
+.first-sec a {
   font-size: 35px;
   margin-top: 20px;
   display: block;
 }
-footer hr{
+footer hr {
   height: 180px;
   border: none;
-  border-left:1px solid #C4C4C4 ;
+  border-left: 1px solid #c4c4c4;
   opacity: 10%;
 }
 
-.second-sec p{
+.second-sec p {
   font-size: 35px;
   margin-bottom: 20px;
 }
-.second-sec .list{
+.second-sec .list {
   display: flex;
 }
-.second-sec .list ul{
+.second-sec .list ul {
   margin-right: 73px;
   margin-left: 25px;
   font-size: 20px;
 }
-.second-sec .list ul li{
+.second-sec .list ul li {
   margin-bottom: 20px;
 }
-.third-sec{
+.third-sec {
   text-align: right;
   font-size: 19px;
 }
-.third-sec div{
+.third-sec div {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-.third-sec i{
+.third-sec i {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-.third-sec p{
+.third-sec p {
   margin-bottom: 20px;
+}
+
+/* =========== mobile responsive ============== */
+
+@media only screen and (max-width: 360px){
+  nav > img{
+    height: 20px;
+    
+  }
+  #menu-icon{
+    width: 20px;
+    height: 10px;
+  }
+  .contact {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  /* banner section */
+  .banner{
+    height: 300px;
+  }
+  .banner-info-container {
+    top: 20px;
+    left: 20px;
+  }
+  .banner-title {
+    font-size: 35px;
+  }
+  .red-box {
+    height: 95px;
+    width: 94px;
+    margin-top: 50px;
+  }
+  .red-box-text-container {
+    top: 20px;
+    left: 20px;
+  }
+  .red-box-text-container h1 {
+    font-size: 20px;
+  }
+
+  #line {
+    width: 30px;
+    margin-top: 12px;
+    margin-left: 5px;
+  }
+  .banner-text {
+    font-size: 13px;
+    top: 220px;
+  }
+  .banner-text #text2 {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /* industry section */
+
+  .industry-experts-section {
+    margin: 60px auto 0;
+  }
+  
+  .industry-experts-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .industry-experts-section .container .left {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .industry-experts-section .container .right {
+    width: 100%;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:50px;
+    line-height: 22px;
+  }
+
+  .small-text {
+    margin-bottom: 15px;
+  }
+  .industry-experts-section h1,
+  .first-choice-section h1 {
+    font-size: 30px;
+  }
+  .stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .stats div {
+    padding: 0 ;
+  }
+  .stats h1 {
+    font-size: 60px;
+  }
+  .stats p {
+    font-size: 20px;
+  }
+
+  /* first choice section */
+  .first-choice-section .container {
+    top: 50px;
+    left: 0px;
+  }
+  .container-header{
+    margin-left: 20px;
+  }
+  .left-image{
+    display: none;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    margin-top: 30px;
+  }
+  .card {
+    margin: 11px 22px ;
+  }
+
+  /* service section */
+  .service-section {
+    margin-top: 2250px;
+  }
+  .service-section-header {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .service-section img {
+   height: 20px;
+  }
+  #structure{
+    background-color: red;
+    display:none;
+  }
+  .subtitle-container {
+    margin-left: 20px;
+  }
+  .subtitle {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  .service-card-container {
+   
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    column-gap: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-left: 2px solid #ec2232;
+    padding-left: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  .service-card {
+    flex-direction: column;
+  }
+  .service-card .order {
+    font-size: 25px;
+    color: #f0e3d8;
+    font-weight: 600;
+    margin-right: 25px;
+  } 
+  .service-card .img {
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .service-info {
+    margin-left: 0px;
+  }
+  .service-info h2 {
+    font-size: 25px;
+  }
+  .service-card .img img{
+    width: 90%;
+    height: 90%;
+  }
+/* =========== */
+.machine-section {
+  height: 300px;
+}
+.machine-info-container {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.machine-small-text {
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+.machine-title {
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  line-height: 28px;
+  
+}
+.machine-text {
+  font-size: 13px;
+  line-height: 15px;
+  width: 90%;
+}
+.machine-card-container {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.machine-card {
+  margin-right: 20px;
+}
+.card-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+.card-text {
+  font-size: 12px;
+}
+.machine-card img{
+  height: 40px;
+}
+#area-title{
+  margin-top: 5px;
+}
+
+/* industry logo section */
+.industries-section {
+  padding:50px 20px;
+}
+.industries-section p {
+  
+  margin-bottom: 40px;
+}
+.industries-logo {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+/* contact section */
+.contact-section {
+  flex-direction: column;
+}
+.form-container {
+  padding: 50px 20px;
+  width: 100%;
+}
+.form-container h1 {
+  font-size: 35px;
+}
+.form-container h1 span {
+  border-bottom: 3px solid #fff;
+}
+.map-container {
+  width: 100%;
+  position: static;
+  transform: translateY(0%);
+}
+
+.floating-div {
+  flex-direction: column;
+}
+
+.info-div {
+  width: 100%;
+}
+.img-container {
+  width: 100%;
+}
+/* footer */
+footer {
+  padding: 50px 20px;
+  flex-direction: column;
+  align-items: start;
+}
+.first-sec a {
+  font-size: 20px;
+}
+footer hr {
+ width: 90%;
+ height: 1px;
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+  margin: 30px 0;
+}
+
+.second-sec p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.second-sec .list ul {
+  margin-right: 33px;
+  margin-left: 25px;
+  font-size: 13px;
+}
+.second-sec .list ul li {
+  margin-bottom: 15px;
+}
+.third-sec {
+  text-align: left;
+}
+.third-sec div {
+  margin-bottom: 0px;
+}
+.third-sec i {
+  margin-right: 15px;
+}
+.third-sec p {
+  margin-bottom: 16px;
+}
+body{
+  border: 1px solid;
+}
+
 }
