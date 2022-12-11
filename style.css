@@ -5,12 +5,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 .body {
   width: 100%;
   max-width: 1920px;
   margin: auto;
   font-family: "ITC Avant Garde Gothic Std Book", sans-serif;
+  
 }
 /* ================================== */
 nav {
@@ -577,18 +579,19 @@ footer hr {
     flex-direction: column;
   }
   .industry-experts-section .container .left {
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
+    
   }
   .industry-experts-section .container .right {
-    width: 100%;
+    width: 90%;
     font-size: 15px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top:50px;
     line-height: 22px;
   }
-
+ 
   .small-text {
     margin-bottom: 15px;
   }
